@@ -8,6 +8,7 @@ void draw()
 {
   background(0,180,0);
   grille(10, 10);
+  texte();
 }
 
 void grille(int lignes,int colonnes)
@@ -19,4 +20,12 @@ void grille(int lignes,int colonnes)
   for (int j = 0; j < 800; j = j + 80) {
     line(j,0,j,800);
   }
+}
+
+void texte()
+{
+  PFont police;
+  police = loadFont("ZenKai-Medium-48.vlw");
+  textFont(police,48);
+  text(0, 20, 50);
 }
