@@ -29,3 +29,20 @@ void texte()
   textFont(police,48);
   text(0, 20, 50);
 }
+
+class snek
+{
+  int variable;
+  
+  sneckers(int valeur)
+  {
+    variable = valeur;
+  }
+  
+  void smth()
+  {
+    noStroke();
+    fill(255,0,0);
+    rect(0,0,80,80);
+  }
+}
